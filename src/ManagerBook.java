@@ -17,6 +17,8 @@ public class ManagerBook {
             choices = input.nextInt();
             input.nextLine();
             switch (choices) {
+                case 0:
+                    System.out.println("Chao Va Hen Gap Lai");
                 case 1:
                     addBook(lisBook, input);
                     break;
@@ -33,6 +35,7 @@ public class ManagerBook {
                     break;
                 case 5:
                     getTotalPrice(lisBook);
+                    break;
             }
         } while (choices != 0);
     }
