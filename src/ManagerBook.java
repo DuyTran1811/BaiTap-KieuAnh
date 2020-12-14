@@ -63,7 +63,22 @@ public class ManagerBook {
     private static void edit(Books[] lisBook, int index) {
         for (Books books : lisBook) {
             if (books.equals(index)) {
-                add();
+                var input = new Scanner(System.in);
+                System.out.println("Nhap Ten Sach");
+                var id = input.nextLine();
+                books.setName(id);
+                System.out.println("Nhap Ten Tac Gia");
+                var other = input.nextLine();
+                books.setAuthor(other);
+                System.out.println("Nhap Gia Ban");
+                var price = input.nextInt();
+                books.setPrice(price);
+                System.out.println("So Tien");
+                var amount = input.nextInt();
+                books.setAmount(amount);
+                System.out.println("Can Nang");
+                var width = input.nextDouble();
+                books.setWeight(width);
             }
         }
     }
